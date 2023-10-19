@@ -1,0 +1,35 @@
+
+Garbage Collection:
+
+Implicit Garbage Collection- it is automatically managed.
+
+Used the free the memory as and when needed and its done automatically.
+
+Generations:
+Class Object created Managed Heap.
+Gen 0--newly created objects
+
+when gen0 go there one cycle of Garbage, ie they are saved and not garbage collected
+
+
+Gen 1--are the objects that have survived through the cycle of GC, and now they are the safe objects on the managed heap.
+
+Gen2--they are safest objects, and very very rarely they will be Garbage collected from here.
+
+
+
+step1) objects on the heap
+step2) LRU used objects are marked for GC
+step3) marked object goes to the freachable queue
+step4) GC.Collect()-- will be garbage collected
+step5) compaction
+
+
+
+
+
+Which objects survive Garbage Collections?
+
+The objects which are most recently used objects from the heap they survive Garbage Collection.
+Garbage Collection works on a algorithm called as LRU(Least Recently used) will be garbage collected
+
